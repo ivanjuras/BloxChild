@@ -1,8 +1,8 @@
 ( function( global, $ ) {
 
-	//---------- HWC Module ----------//
+	//---------- CBLOX Module ----------//
 
-	var HWC = {
+	var CBLOX = {
 
 	}
 
