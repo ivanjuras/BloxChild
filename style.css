@@ -1,0 +1,510 @@
+/*
+ Theme Name:   Blox Custom Child Theme
+ Theme URI:    https://www.customerbloom.com
+ Description:  Custom child theme for Blox-powered sites
+ Author:       Ivan Juras
+ Author URI:   http://ivanjuras.com
+ Template:     bloxtheme
+ Version:      1.0.3
+ Text Domain:  cblox
+*/
+
+/*
+
+Red:
+Tomato:
+
+*/
+
+
+
+
+/*------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+---------------------------------------- BEGIN CORE ----------------------------------------
+--------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------*/
+
+
+
+
+/*******************************************************
+******************** CORE UTILITIES ********************
+*******************************************************/
+
+/********** TYPOGRAPHY UTILITIES **********/
+
+.u-upperCaseLetters {
+	text-transform: uppercase !important;
+}
+
+.u-lightWeight {
+	font-weight: 300 !important;
+}
+
+.u-normalWeight {
+	font-weight: 400 !important;
+}
+
+.u-semiBoldWeight {
+	font-weight: 600 !important;
+}
+
+.u-boldWeight {
+	font-weight: 700 !important;
+}
+
+.u-extraBoldWeight {
+	font-weight: 900 !important;
+}
+
+
+/********** SPACING UTILITIES **********/
+
+.u-marginBottomM {
+	margin-bottom: 1.5rem !important;
+}
+
+.u-noMarginBottom {
+	margin-bottom: 0 !important;
+}
+
+.u-sidePaddings {
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+}
+
+.u-noPaddingTop {
+	padding-top: 0 !important;
+}
+
+/********** CENTERING UTILITIES **********/
+
+.u-centerText {
+	text-align: center !important;
+}
+
+.u-leftText {
+	text-align: left !important;
+}
+
+.u-centerBlockH {
+	display: flex;
+	justify-content: center;
+}
+
+.u-centerBlockV {
+	display: flex;
+	align-items: center;
+}
+
+
+/********** STYLING UTILITIES **********/
+
+.u-borderBottom {
+	border-bottom: 1px solid #d7d7d7 !important;
+}
+
+
+
+/****************************************************
+******************** CORE STYLES ********************
+****************************************************/
+
+/********** Core elements **********/
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-size: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+ul {
+	list-style: disc;
+	padding-left: 2rem;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+:focus {
+	outline: 0;
+}
+
+/********** Core WP Styles **********/
+
+.alignright,
+.alignleft {
+	display: block !important;
+	margin: 0 auto !important;
+	margin-bottom: 1.5rem !important;
+}
+
+@media ( min-width: 64rem ) {
+	.alignright {
+	float: right;
+	margin: 0 0 1em 1em !important;
+	}
+	.alignleft {
+		float: left;
+		margin: 0 1em 1em 0 !important;
+	}
+	.aligncenter {
+		display: block;
+		margin: 0 auto !important;
+	}
+}
+
+
+/********** Core classes **********/
+
+#whitewrap {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.block,
+.block-type-content .hentry,
+.block-type-content div.entry-content {
+	margin: 0;
+	padding: 0;
+}
+
+.block-type-widget-area li.widget {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0.3125rem 0.1875rem;
+}
+.block-type-widget-area li.widget ul {
+	padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.HomeContent,
+.PageContent,
+.PageContent--fixedWidth,
+.BlogContent {
+	flex: 1;
+}
+@media( max-width: 74rem ) {
+	.BlogContent .grid-container,
+	.PageContent--fixedWidth .grid-container {
+		padding-left: 1.5rem !important;
+		padding-right: 1.5rem !important;
+	}
+}
+
+
+
+/*******************************************************
+******************** CORE BB STYLES ********************
+*******************************************************/
+
+/********** BB rows **********/
+
+.row {
+	margin: 0 !important;
+}
+.fl-row-content-wrap {
+	padding-left: 1.5rem !important;
+	padding-right: 1.5rem !important;
+}
+
+
+/********** BB columns **********/
+
+@media ( max-width: 35.5rem ) {
+	.fl-col-group {
+		margin-bottom: 1.25rem !important;
+	}
+	.fl-col-group:last-of-type {
+		margin-bottom: 0 !important;
+	}
+}
+
+@media ( max-width: 64rem ) {
+	.fl-col-small {
+		max-width: 100% !important;
+	}
+}
+
+
+/********** BB modules **********/
+
+.fl-module-content {
+	margin: 0;
+}
+
+
+/********** BB modals **********/
+
+@media ( max-width: 48rem ) {
+	.modal-dialog {
+		width: 90%;
+	}
+}
+
+
+/********** BB buttons **********/
+
+.fl-button:focus {
+	outline: 0;
+}
+
+
+/********** Hide PowerPack black preview button **********/
+
+.pp-preview-button {
+	display: none;
+}
+
+
+
+/*********************************************************
+******************** CORE FONT STYLES ********************
+*********************************************************/
+
+body {
+	font-size: 100%;
+}
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+	font-size-adjust: 0.5;
+}
+em {
+	font-style: italic;
+}
+
+
+/********** Smaller phones **********/
+
+p {
+	margin-bottom: 1.6em;
+}
+
+p,
+li,
+blockquote {
+	font-size: 1rem;
+	line-height: 1.7em;
+}
+
+h1 {
+	font-size: 2rem;
+	line-height: 1.25em;
+}
+
+h2,
+.h1-smaller
+.h1-smaller h1,
+.h3-bigger,
+.h3-bigger h3 {
+	font-size: 1.625rem;
+	line-height: 1.15384615em;
+}
+
+h3,
+.h2-smaller,
+.h2-smaller h2,
+.h4-bigger,
+.h4-bigger h4 {
+	font-size: 1.375rem;
+	line-height: 1.13636364em;
+}
+
+h4 {
+	font-size: 1.125rem;
+	line-height: 1.11111111em;
+}
+
+
+/********** Bigger phones **********/
+
+@media ( min-width: 34rem ) {
+	p,
+	li,
+	blockquote {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 2rem;
+		line-height: 1.25em;
+	}
+
+	h2,
+	.h1-smaller,
+	.h1-smaller h1,
+	.h3-bigger,
+	.h3-bigger h3 {
+		font-size: 1.625rem;
+		line-height: 1.15384615em;
+	}
+
+	h3,
+	.h2-smaller,
+	.h2-smaller h2,
+	.h4-bigger,
+	.h4-bigger h4 {
+		font-size: 1.375rem;
+		line-height: 1.13636364em;
+	}
+
+	h4 {
+		font-size: 1.125rem;
+		line-height: 1.11111111em;
+	}
+}
+
+
+/********** Tablets **********/
+
+@media  ( min-width: 48rem ) {
+	p,
+	li,
+	blockquote {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 1.125em;
+	}
+
+	h2,
+	.h1-smaller,
+	.h1-smaller h1,
+	.h3-bigger,
+	.h3-bigger h3 {
+		font-size: 2rem;
+		line-height: 1.25em;
+	}
+
+	h3,
+	.h2-smaller,
+	.h2-smaller h2,
+	.h4-bigger,
+	.h4-bigger h4 {
+		font-size: 1.5rem;
+		line-height: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.125rem;
+		line-height: 1.22222222em;
+	}
+}
+
+
+/********** Smaller desktops **********/
+
+@media  ( min-width: 62rem ) {
+	p,
+	li,
+	blockquote {
+		font-size: 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		line-height: 1.05em;
+	}
+
+	h2,
+	.h1-smaller,
+	.h1-smaller h1,
+	.h3-bigger,
+	.h3-bigger h3 {
+		font-size: 2.25rem;
+		line-height: 1.25em;
+	}
+
+	h3,
+	.h2-smaller,
+	.h2-smaller h2,
+	.h4-bigger,
+	.h4-bigger h4 {
+		font-size: 1.75rem;
+		line-height: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.125rem;
+		line-height: 1.22222222em;
+	}
+}
+
+
+/********** Bigger desktops **********/
+
+@media  ( min-width: 75rem ) {
+	p,
+	li,
+	blockquote {
+		font-size: 1.125rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		line-height: 1.05em;
+	}
+
+	h2,
+	.h1-smaller,
+	.h1-smaller h1,
+	.h3-bigger,
+	.h3-bigger h3 {
+		font-size: 2.25rem;
+		line-height: 1.25em;
+	}
+
+	.h2-bigger{
+		font-size: 3rem;
+	}
+
+	h3,
+	.h2-smaller,
+	.h2-smaller h2,
+	.h4-bigger,
+	.h4-bigger h4 {
+		font-size: 1.75rem;
+		line-height: 1.25em;
+	}
+
+	h4 {
+		font-size: 1.125rem;
+		line-height: 1.22222222em;
+	}
+}
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+---------------------------------------- BEGIN GLOBAL ----------------------------------------
+----------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------*/
